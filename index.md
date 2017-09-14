@@ -1,1 +1,1 @@
-# [#recent-articles] (Recent Articles)
+# [Recent Articles](#recent-articles)
