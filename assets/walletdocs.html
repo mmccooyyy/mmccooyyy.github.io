@@ -1,0 +1,1147 @@
+
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>@font-face {
+  font-family: octicons-anchor;
+  src: url(https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.woff) format('woff');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    color:#333;
+    background:#fff;
+}
+
+body .markdown-body {
+    padding: 45px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    word-wrap: break-word;
+}
+
+pre {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body input {
+  font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.markdown-body a {
+  color: #4078c0;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body .select::-ms-expand {
+  opacity: 0;
+}
+
+.markdown-body .octicon {
+  font: normal normal normal 16px/1 octicons-anchor;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+
+.markdown-body:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body .anchor {
+  display: inline-block;
+  padding-right: 2px;
+  margin-left: -18px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #000;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h1 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h3 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h5 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body h6 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .pl-c {
+  color: #969896;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #0086b3;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #795da3;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #333;
+}
+
+.markdown-body .pl-ent {
+  color: #63a35c;
+}
+
+.markdown-body .pl-k {
+  color: #a71d5d;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #183691;
+}
+
+.markdown-body .pl-v {
+  color: #ed6a43;
+}
+
+.markdown-body .pl-id {
+  color: #b52a1d;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b52a1d;
+  color: #f8f8f8;
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #63a35c;
+  font-weight: bold;
+}
+
+.markdown-body .pl-ml {
+  color: #693a17;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #1d3e81;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mq {
+  color: #008080;
+}
+
+.markdown-body .pl-mi {
+  color: #333;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #333;
+  font-weight: bold;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.markdown-body .pl-mdr {
+  color: #795da3;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mo {
+  color: #1d3e81;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .plan-price-unit {
+  color: #767676;
+  font-weight: normal;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 0.35em 0.25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body .plan-choice {
+  padding: 15px;
+  padding-left: 40px;
+  display: block;
+  border: 1px solid #e0e0e0;
+  position: relative;
+  font-weight: normal;
+  background-color: #fafafa;
+}
+
+.markdown-body .plan-choice.open {
+  background-color: #fff;
+}
+
+.markdown-body .plan-choice.open .plan-choice-seat-breakdown {
+  display: block;
+}
+
+.markdown-body .plan-choice-free {
+  border-radius: 3px 3px 0 0;
+}
+
+.markdown-body .plan-choice-paid {
+  border-radius: 0 0 3px 3px;
+  border-top: 0;
+  margin-bottom: 20px;
+}
+
+.markdown-body .plan-choice-radio {
+  position: absolute;
+  left: 15px;
+  top: 18px;
+}
+
+.markdown-body .plan-choice-exp {
+  color: #999;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.markdown-body .plan-choice-seat-breakdown {
+  margin-top: 10px;
+  display: none;
+}
+
+.markdown-body :checked+.radio-label {
+  z-index: 1;
+  position: relative;
+  border-color: #4078c0;
+}
+
+@media print {
+  body .markdown-body {
+    padding: 0;
+    border: none;
+  }
+}
+</style><title>FhirWalletSSO</title></head><body><article class="markdown-body"><h1>
+<a id="user-content-patientwallet-sso" class="anchor" href="#patientwallet-sso" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>PatientWallet SSO</h1>
+<p>You can use <strong>Patientco SMART on FHIR App Launch Framework</strong> to give a patient instant access to the PatientWallet. This allows the patient to access their PatientWallet without going through any account creation or login steps.</p>
+<h2>
+<a id="user-content-prerequesities" class="anchor" href="#prerequesities" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Prerequesities</h2>
+<p>Before starting make sure you have a Patientco issued <strong>Provider Code</strong>. We'll use the placeholder <code>{providerCode}</code> to designate where the <strong>Provider Code</strong> should be used in the following documentation.</p>
+<h2>
+<a id="user-content-api-endpoints" class="anchor" href="#api-endpoints" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>API Endpoints</h2>
+<p>You will need to create 3 endpoints in your application API that Patientco will use to gather information on the patient.</p>
+<p>These are:</p>
+<ol>
+<li><code>/metadata</code></li>
+<li><code>/authorize</code></li>
+<li><code>/token</code></li>
+</ol>
+<h3>
+<a id="user-content-the-metadata-endpoint" class="anchor" href="#the-metadata-endpoint" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Metadata Endpoint</h3>
+<p>The <code>metadata</code> endpoint tells Patientco where to find the other two endpoints.</p>
+<h4>
+<a id="user-content-request" class="anchor" href="#request" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Request</h4>
+<div class="highlight highlight-source-shell"><pre>curl -X GET https://api.yourapp.com/metadata</pre></div>
+<h4>
+<a id="user-content-response" class="anchor" href="#response" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Response</h4>
+<div class="highlight highlight-source-js"><pre><span class="pl-kos">{</span>
+  <span class="pl-c1">rest</span>: <span class="pl-kos">[</span><span class="pl-kos">{</span>
+    <span class="pl-c1">security</span>: <span class="pl-kos">{</span>
+      <span class="pl-c1">extension</span>: <span class="pl-kos">[</span><span class="pl-kos">{</span>
+        <span class="pl-c1">url</span>: <span class="pl-s">"http://fhir-registry.smarthealthit.org/StructureDefinition/oauth-uris"</span><span class="pl-kos">,</span>
+        <span class="pl-c1">extension</span>: <span class="pl-kos">[</span>
+          <span class="pl-kos">{</span>
+            <span class="pl-c1">url</span>: <span class="pl-s">'authorize'</span><span class="pl-kos">,</span>
+            <span class="pl-c1">valueUri</span>: <span class="pl-s">'https://api.yourapp.com/authorize'</span>
+          <span class="pl-kos">}</span><span class="pl-kos">,</span>
+          <span class="pl-kos">{</span>
+            <span class="pl-c1">url</span>: <span class="pl-s">'token'</span><span class="pl-kos">,</span>
+            <span class="pl-c1">valueUri</span>: <span class="pl-s">'https://api.yourapp.com/token'</span>
+          <span class="pl-kos">}</span>
+        <span class="pl-kos">]</span>
+      <span class="pl-kos">}</span><span class="pl-kos">]</span>
+    <span class="pl-kos">}</span>
+  <span class="pl-kos">}</span><span class="pl-kos">]</span>
+<span class="pl-kos">}</span></pre></div>
+<h3>
+<a id="user-content-the-authorize-endpoint" class="anchor" href="#the-authorize-endpoint" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Authorize Endpoint</h3>
+<p>The <code>authorize</code> endpoint should validate the information passed to it and, if validated, redirect the user to a Patientco issued URL.</p>
+<p>The request to the <code>authorize</code> endpoint will have the following query parameters:</p>
+<ul>
+<li>
+<code>response_type</code>: will always be <code>'code'</code>.</li>
+<li>
+<code>client_id</code>: a unique id issued by Patientco that identifies your application.</li>
+<li>
+<code>redirect_uri</code>: the url to redirect to after authorizing.</li>
+<li>
+<code>scope</code>: will always be <code>'launch'</code>.</li>
+<li>
+<code>launch</code>: the <strong>Launch Token</strong> given in the Launch URL.</li>
+<li>
+<code>state</code>: your <strong>Provider Code</strong>.</li>
+</ul>
+<h4>
+<a id="user-content-validation" class="anchor" href="#validation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Validation</h4>
+<p>Your application should validate the following:</p>
+<ul>
+<li>
+<code>response_type</code> should always be <code>'code'</code>.</li>
+<li>
+<code>redirect_uri</code> should contians a domain that you expect. In production, this will always be <code>https://fhir.patientco.com</code>.</li>
+<li>
+<code>scope</code> should always be <code>'launch'</code>.</li>
+<li>
+<code>launch</code> should match the <strong>Launch Token</strong> included in the <strong>Launch URL</strong>.</li>
+<li>
+<code>state</code> should match the <strong>Provider Code</strong> that Patientco issued to you.</li>
+</ul>
+<p><em>In addition:</em></p>
+<ul>
+<li>The <code>authorize</code> endpoint will be hit by the users browser. If your application is web based, you should validate the users session.</li>
+</ul>
+<p>If validation fails, redirect the user to an error page.</p>
+<h4>
+<a id="user-content-the-redirect-url" class="anchor" href="#the-redirect-url" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Redirect URL</h4>
+<p>When validation passes, issue a <code>HTTP 302</code> status code to redirect the user to the <code>redirect_uri</code> that you received in the request. You'll need to append the following query parameters to the <code>redirect_uri</code>:</p>
+<ul>
+<li>
+<code>code</code>: the <strong>Authorization Code</strong>. This is a one time use, unique code generated by you. Keep track of this code becuase we'll use it later in the <code>token</code> endpoint.</li>
+<li>
+<code>state</code>: your <strong>Provider Code</strong>.</li>
+</ul>
+<h4>
+<a id="user-content-request-1" class="anchor" href="#request-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Request</h4>
+<div class="highlight highlight-source-shell"><pre>curl -X GET https://api.yourapp.com/authorize<span class="pl-k">?</span>response_type=code<span class="pl-k">&amp;</span>client_id=this-is-an-example-client-id<span class="pl-k">&amp;</span>redirect_uri=https://fhir.patientco.com/v1/exchangetoken<span class="pl-k">&amp;</span>scope=launch<span class="pl-k">&amp;</span>launch=this-is-an-example-session-id<span class="pl-k">&amp;</span>state={providerCode}</pre></div>
+<h4>
+<a id="user-content-success-response" class="anchor" href="#success-response" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Success Response</h4>
+<div class="highlight highlight-source-shell"><pre>HTTP/1.1 302 Found
+Location: https://fhir.patientco.com/v1/exchangetoken<span class="pl-k">?</span>code=thisIsAnExampleAuthorizationCode<span class="pl-k">&amp;</span>state={providerCode}</pre></div>
+<h4>
+<a id="user-content-error-response" class="anchor" href="#error-response" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Error Response</h4>
+<div class="highlight highlight-source-shell"><pre>HTTP/1.1 302 Found
+Location: https://api.yourapp.com/error</pre></div>
+<h3>
+<a id="user-content-the-token-endpoint" class="anchor" href="#the-token-endpoint" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Token Endpoint</h3>
+<p>The <code>token</code> endpoint is used to exchange an <strong>Authorization Code</strong> for patient information. The request to <code>token</code> will be a <code>POST</code> with the following query parameters:</p>
+<ul>
+<li>
+<code>grant_type</code>: will always be <code>'authorization_code'</code>.</li>
+<li>
+<code>code</code>: the <strong>Authorization Code</strong>.</li>
+<li>
+<code>redirect_uri</code>: the same URL that was given in the <code>authorize</code> request.</li>
+<li>
+<code>client_id</code>: the <strong>client id</strong> issued by Patientco, same value as in the <code>authorize</code> request.</li>
+</ul>
+<p>Your application should check that the <strong>Authorization Code</strong> is valid, was previously issued in the <code>authorize</code> endpoint, and is not expired (we suggest an expiration time of 5 minutes).</p>
+<p>If the <strong>Authorization Code</strong> could not be found, could not be validated, or is expired, issue a <code>HTTP 404</code> status code. Any data in the body will be ignored.</p>
+<p>If the request cannot be completed for some other reason, issue a <code>HTTP 400</code> status code. Any data in the body will be ignored.</p>
+<p>If the <strong>Authorization Code</strong> is valid, issue a <code>HTTP 200</code> status code with the following data expressed as JSON in the response body:</p>
+<ul>
+<li>
+<code>retrieved</code>: the current timestamp in microseconds.</li>
+<li>
+<code>firstname</code>: the patients first name.</li>
+<li>
+<code>lastname</code>: the patients last name.</li>
+<li>
+<code>email</code>: the patients email address.</li>
+<li>
+<code>state</code>: your <strong>Provider Code</strong>.</li>
+</ul>
+<h4>
+<a id="user-content-request-2" class="anchor" href="#request-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Request</h4>
+<div class="highlight highlight-source-shell"><pre>curl -X POST https://api.yourapp.com/token<span class="pl-k">?</span>grant_type=authorization_code<span class="pl-k">&amp;</span>code=thisIsAnExampleAuthorizationCode<span class="pl-k">&amp;</span>redirect_uri=https://fhir.patientco.com/v1/exchangetoken<span class="pl-k">&amp;</span>client_id=this-is-an-example-client-id</pre></div>
+<h4>
+<a id="user-content-success-response-1" class="anchor" href="#success-response-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Success Response</h4>
+<div class="highlight highlight-source-json"><pre>{
+  <span class="pl-ii">retrieved</span>: <span class="pl-ii">'</span><span class="pl-c1">2147483647000</span><span class="pl-ii">'</span>,
+  <span class="pl-ii">firstname</span>: <span class="pl-ii">'John'</span>,
+  <span class="pl-ii">lastname</span>: <span class="pl-ii">'Doe'</span>,
+  <span class="pl-ii">email</span>: <span class="pl-ii">'john.doe@patientco.com'</span>,
+  <span class="pl-ii">state</span>: <span class="pl-ii">'</span>{<span class="pl-ii">providerCode</span>}<span class="pl-ii">'</span>
+}</pre></div>
+<h4>
+<a id="user-content-error-response-1" class="anchor" href="#error-response-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Error Response</h4>
+<div class="highlight highlight-source-shell"><pre>HTTP/1.1 400 Bad Request</pre></div>
+<h2>
+<a id="user-content-the-launch-flow" class="anchor" href="#the-launch-flow" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Launch Flow</h2>
+<p>There are 5 steps in the launch flow:</p>
+<h3>
+<a id="user-content-1-the-launch-url" class="anchor" href="#1-the-launch-url" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1. The Launch URL</h3>
+<p>The entire process is kicked off by the user opening the <strong>Launch URL</strong> in their browser. The <strong>Launch URL</strong> uses the <code>launchsso</code> endpoint and looks like this:</p>
+<div class="highlight highlight-source-shell"><pre>https://fhir.patientco.com/{providerCode}/v1/launchsso<span class="pl-k">?</span>iss=https://api.yourapp.com<span class="pl-k">&amp;</span>launch=this-is-an-example-session-id</pre></div>
+<p>This URL should be generated by your application. It contains your <strong>Provider Code</strong> (which was issued to you by Patientco), an <strong>Issuer</strong> (<code>iss</code>), and a <strong>Launch Token</strong> (<code>launch</code>).</p>
+<ul>
+<li>
+<p>The <strong>Issuer</strong> is the URL that your <code>metadata</code> endpoint lives at. Patientco will append <code>'metadata'</code> to the end of this URL and expect to find your metadata there.</p>
+</li>
+<li>
+<p>The <strong>Launch Token</strong> is a one time use, unqiue token that identifies a specific session. We recommend using the session identifier of the current user, but this can be any unique value.</p>
+</li>
+</ul>
+<p>Once the user opens the <strong>Launch URL</strong> in their browser, Patientco queries the <code>metadata</code> endpoint.</p>
+<h3>
+<a id="user-content-2-metadata-retreival" class="anchor" href="#2-metadata-retreival" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2. Metadata Retreival</h3>
+<p>Patientco will issue a <code>GET</code> request to the <code>metadata</code> endpoint as explained in the previous step. Once the metadata is retrieved, the user will be redirected to the <code>authorize</code> endpoint.</p>
+<h3>
+<a id="user-content-3-authorization" class="anchor" href="#3-authorization" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3. Authorization</h3>
+<p>Once the user hits the <code>authorize</code> endpoint, your application should validate the data given. Data will be passed with the query parameters explained in the <a href="#the-authorize-endpoint">Authorize Endpoint</a> section. Once the data given has been validated, your application will redirect the user to the <strong>Token Exchange</strong> endpoint as specified by the <code>redirect_uri</code>.</p>
+<h3>
+<a id="user-content-4-token-exchange" class="anchor" href="#4-token-exchange" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4. Token Exchange</h3>
+<p>Once Patientco receives the <strong>Token Exchange</strong> request, we validate the data given and issue a <code>POST</code> request to the <code>token</code> endpoint with the query parameters explained in the <a href="#the-token-endpoint">Token Endpoint</a> section. Your application will need to validate the data given and return a <code>HTTP 404</code>, <code>HTTP 400</code>, or <code>HTTP 200</code> + Patient Data JSON based on your validation.</p>
+<h3>
+<a id="user-content-5-authentication" class="anchor" href="#5-authentication" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>5. Authentication</h3>
+<p>Once Patientco retrieves the patient data, the user's PatientWallet account will be created if nessecary and the user will be redirected to the PatientWallet SSO page. We will pass a one time use token to PatientWallet that will automatically login the user.</p>
+<h2>
+<a id="user-content-example-application-api" class="anchor" href="#example-application-api" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example Application API</h2>
+<p>The following is an example application API written in Node.</p>
+<div class="highlight highlight-source-js"><pre>
+<span class="pl-c">/**</span>
+<span class="pl-c"> * Example Application API for Patientco SMART on FHIR App Launch Framework</span>
+<span class="pl-c"> *</span>
+<span class="pl-c"> * Node v12.0.0</span>
+<span class="pl-c"> *</span>
+<span class="pl-c"> * LICENSE: This program is free software: you can redistribute it and/or modify</span>
+<span class="pl-c"> * it under the terms of the GNU General Public License as published by</span>
+<span class="pl-c"> * the Free Software Foundation, either version 3 of the License, or</span>
+<span class="pl-c"> * (at your option) any later version.</span>
+<span class="pl-c"> * </span>
+<span class="pl-c"> * This program is distributed in the hope that it will be useful,</span>
+<span class="pl-c"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<span class="pl-c"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
+<span class="pl-c"> * GNU General Public License for more details.</span>
+<span class="pl-c"> * </span>
+<span class="pl-c"> * You should have received a copy of the GNU General Public License</span>
+<span class="pl-c"> * along with this program. If not, see &lt;https://www.gnu.org/licenses/&gt;.</span>
+<span class="pl-c"> *</span>
+<span class="pl-c"> * <span class="pl-k">@package</span>    ExampleApplicationApiForPatientcoSmartOnFhirAppLaunchFramework</span>
+<span class="pl-c"> * <span class="pl-k">@author</span>     Matt McCoy &lt;matt.mccoy@patientco.com&gt;</span>
+<span class="pl-c"> * <span class="pl-k">@copyright</span>  2020 Patientco</span>
+<span class="pl-c"> * <span class="pl-k">@license</span>    https://www.gnu.org/licenses/  LGPL v3</span>
+<span class="pl-c"> * <span class="pl-k">@version</span>    1.0.0</span>
+<span class="pl-c"> * <span class="pl-k">@since</span>      File available since Release 1.0.0</span>
+<span class="pl-c"> */</span>
+
+<span class="pl-k">const</span> <span class="pl-s1">_</span> <span class="pl-c1">=</span> <span class="pl-en">require</span><span class="pl-kos">(</span><span class="pl-s">'underscore'</span><span class="pl-kos">)</span>
+<span class="pl-k">const</span> <span class="pl-s1">express</span> <span class="pl-c1">=</span> <span class="pl-en">require</span><span class="pl-kos">(</span><span class="pl-s">'express'</span><span class="pl-kos">)</span>
+<span class="pl-k">const</span> <span class="pl-s1">crypto</span> <span class="pl-c1">=</span> <span class="pl-en">require</span><span class="pl-kos">(</span><span class="pl-s">'crypto'</span><span class="pl-kos">)</span>
+<span class="pl-k">const</span> <span class="pl-s1">url</span> <span class="pl-c1">=</span> <span class="pl-en">require</span><span class="pl-kos">(</span><span class="pl-s">'url'</span><span class="pl-kos">)</span>
+<span class="pl-k">const</span> <span class="pl-s1">app</span> <span class="pl-c1">=</span> <span class="pl-s1">express</span><span class="pl-kos">(</span><span class="pl-kos">)</span>
+
+<span class="pl-k">const</span> <span class="pl-s1">authorizations</span> <span class="pl-c1">=</span> <span class="pl-kos">[</span><span class="pl-kos">]</span>
+
+<span class="pl-c">/**</span>
+<span class="pl-c"> * The Metadata Endpoint</span>
+<span class="pl-c"> * Returns information on the other endpoints available.</span>
+<span class="pl-c"> *</span>
+<span class="pl-c"> * <span class="pl-k">@endpoint</span> GET /metadata</span>
+<span class="pl-c"> * <span class="pl-k">@params</span> [none]</span>
+<span class="pl-c"> * <span class="pl-k">@returns</span> {<span class="pl-smi">json</span>} The metadata object</span>
+<span class="pl-c"> */</span>
+<span class="pl-s1">app</span><span class="pl-kos">.</span><span class="pl-en">get</span><span class="pl-kos">(</span><span class="pl-s">'/metadata'</span><span class="pl-kos">,</span> <span class="pl-kos">(</span><span class="pl-s1">req</span><span class="pl-kos">,</span> <span class="pl-s1">res</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+
+  <span class="pl-s1">res</span><span class="pl-kos">.</span><span class="pl-c1">statusCode</span> <span class="pl-c1">=</span> <span class="pl-c1">200</span>
+  <span class="pl-s1">res</span><span class="pl-kos">.</span><span class="pl-en">setHeader</span><span class="pl-kos">(</span><span class="pl-s">'Content-Type'</span><span class="pl-kos">,</span> <span class="pl-s">'text/json'</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">send</span><span class="pl-kos">(</span><span class="pl-kos">{</span>
+    <span class="pl-c1">rest</span>: <span class="pl-kos">[</span><span class="pl-kos">{</span>
+      <span class="pl-c1">security</span>: <span class="pl-kos">{</span>
+        <span class="pl-c1">extension</span>: <span class="pl-kos">[</span><span class="pl-kos">{</span>
+          <span class="pl-c1">url</span>: <span class="pl-s">"http://fhir-registry.smarthealthit.org/StructureDefinition/oauth-uris"</span><span class="pl-kos">,</span>
+          <span class="pl-c1">extension</span>: <span class="pl-kos">[</span>
+            <span class="pl-kos">{</span>
+              <span class="pl-c1">url</span>: <span class="pl-s">'authorize'</span><span class="pl-kos">,</span>
+              <span class="pl-c1">valueUri</span>: <span class="pl-s">'https://api.yourapp.com/authorize'</span>
+            <span class="pl-kos">}</span><span class="pl-kos">,</span>
+            <span class="pl-kos">{</span>
+              <span class="pl-c1">url</span>: <span class="pl-s">'token'</span><span class="pl-kos">,</span>
+              <span class="pl-c1">valueUri</span>: <span class="pl-s">'https://api.yourapp.com/token'</span>
+            <span class="pl-kos">}</span>
+          <span class="pl-kos">]</span>
+        <span class="pl-kos">}</span><span class="pl-kos">]</span>
+      <span class="pl-kos">}</span>
+    <span class="pl-kos">}</span><span class="pl-kos">]</span>
+  <span class="pl-kos">}</span><span class="pl-kos">)</span>
+
+<span class="pl-kos">}</span><span class="pl-kos">)</span>
+
+<span class="pl-c">/**</span>
+<span class="pl-c"> * The Authorize Endpoint</span>
+<span class="pl-c"> * Accepts a number of parameters, validates that data, creates an Authorization Code, and redirects the user to the Token Exchange endpoint.</span>
+<span class="pl-c"> *</span>
+<span class="pl-c"> * <span class="pl-k">@endpoint</span> GET /authorize</span>
+<span class="pl-c"> * <span class="pl-k">@param</span>  {<span class="pl-smi">string</span>} response_type  Will always be 'code'</span>
+<span class="pl-c"> * <span class="pl-k">@param</span>  {<span class="pl-smi">string</span>} client_id      A unqiue id issued by Patientco</span>
+<span class="pl-c"> * <span class="pl-k">@param</span>  {<span class="pl-smi">string</span>} redirect_uri   The url of the Token Exchange endpoint</span>
+<span class="pl-c"> * <span class="pl-k">@param</span>  {<span class="pl-smi">string</span>} scope          Will always be 'launch'</span>
+<span class="pl-c"> * <span class="pl-k">@param</span>  {<span class="pl-smi">string</span>} launch         The Launch Token given in the inital request</span>
+<span class="pl-c"> * <span class="pl-k">@param</span>  {<span class="pl-smi">string</span>} state          The Provider Code issued by Patientco</span>
+<span class="pl-c"> * <span class="pl-k">@return</span> {<span class="pl-smi">HTTP 302</span>}              Redirects the user to the Token Exchange endpoint</span>
+<span class="pl-c"> */</span>
+<span class="pl-s1">app</span><span class="pl-kos">.</span><span class="pl-en">get</span><span class="pl-kos">(</span><span class="pl-s">'/authorize'</span><span class="pl-kos">,</span> <span class="pl-kos">(</span><span class="pl-s1">req</span><span class="pl-kos">,</span> <span class="pl-s1">res</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+
+  <span class="pl-s1">res</span><span class="pl-kos">.</span><span class="pl-en">setHeader</span><span class="pl-kos">(</span><span class="pl-s">'Content-Type'</span><span class="pl-kos">,</span> <span class="pl-s">'text/json'</span><span class="pl-kos">)</span>
+  <span class="pl-s1">res</span><span class="pl-kos">.</span><span class="pl-c1">statusCode</span> <span class="pl-c1">=</span> <span class="pl-c1">302</span>
+  
+  <span class="pl-c">// Check that all of the required parameters are here</span>
+  <span class="pl-k">if</span> <span class="pl-kos">(</span>
+       <span class="pl-s1">_</span><span class="pl-kos">.</span><span class="pl-en">isUndefined</span><span class="pl-kos">(</span><span class="pl-s1">req</span><span class="pl-kos">.</span><span class="pl-c1">query</span><span class="pl-kos">.</span><span class="pl-c1">client_id</span><span class="pl-kos">)</span>
+    <span class="pl-c1">||</span> <span class="pl-s1">_</span><span class="pl-kos">.</span><span class="pl-en">isUndefined</span><span class="pl-kos">(</span><span class="pl-s1">req</span><span class="pl-kos">.</span><span class="pl-c1">query</span><span class="pl-kos">.</span><span class="pl-c1">launch</span><span class="pl-kos">)</span>
+    <span class="pl-c1">||</span> <span class="pl-s1">_</span><span class="pl-kos">.</span><span class="pl-en">isUndefined</span><span class="pl-kos">(</span><span class="pl-s1">req</span><span class="pl-kos">.</span><span class="pl-c1">query</span><span class="pl-kos">.</span><span class="pl-c1">redirect_uri</span><span class="pl-kos">)</span>
+    <span class="pl-c1">||</span> <span class="pl-s1">_</span><span class="pl-kos">.</span><span class="pl-en">isUndefined</span><span class="pl-kos">(</span><span class="pl-s1">req</span><span class="pl-kos">.</span><span class="pl-c1">query</span><span class="pl-kos">.</span><span class="pl-c1">scope</span><span class="pl-kos">)</span>
+    <span class="pl-c1">||</span> <span class="pl-s1">_</span><span class="pl-kos">.</span><span class="pl-en">isUndefined</span><span class="pl-kos">(</span><span class="pl-s1">req</span><span class="pl-kos">.</span><span class="pl-c1">query</span><span class="pl-kos">.</span><span class="pl-c1">state</span><span class="pl-kos">)</span>
+  <span class="pl-kos">)</span> <span class="pl-kos">{</span>
+
+    <span class="pl-c">// If we don't have all of the required parameters, log the error and redirect the user to the error page.</span>
+    <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">'ERROR: Error on /authorize. Parameters missing. Received: '</span><span class="pl-kos">,</span> <span class="pl-s1">req</span><span class="pl-kos">.</span><span class="pl-c1">query</span><span class="pl-kos">)</span>
+    <span class="pl-s1">res</span><span class="pl-kos">.</span><span class="pl-en">setHeader</span><span class="pl-kos">(</span><span class="pl-s">'Location'</span><span class="pl-kos">,</span> <span class="pl-s">'https://api.yourapp.com/error'</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">send</span><span class="pl-kos">(</span><span class="pl-kos">)</span>
+
+  <span class="pl-kos">}</span> <span class="pl-k">else</span> <span class="pl-kos">{</span>
+
+    <span class="pl-c">// We have all the info we need!</span>
+    <span class="pl-c">// Run some validation</span>
+    <span class="pl-k">if</span> <span class="pl-kos">(</span>!<span class="pl-en">isAuthorizationRequestValid</span><span class="pl-kos">(</span><span class="pl-s1">req</span><span class="pl-kos">.</span><span class="pl-c1">query</span><span class="pl-kos">)</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+
+      <span class="pl-c">// Validation failed, log and redirect to error page.</span>
+      <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">'ERROR: Error on /authorize. Authorization request validation failed. Received: '</span><span class="pl-kos">,</span> <span class="pl-s1">req</span><span class="pl-kos">.</span><span class="pl-c1">query</span><span class="pl-kos">)</span>
+      <span class="pl-s1">res</span><span class="pl-kos">.</span><span class="pl-en">setHeader</span><span class="pl-kos">(</span><span class="pl-s">'Location'</span><span class="pl-kos">,</span> <span class="pl-s">'https://api.yourapp.com/error'</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">send</span><span class="pl-kos">(</span><span class="pl-kos">)</span>
+
+    <span class="pl-kos">}</span> <span class="pl-k">else</span> <span class="pl-kos">{</span>
+
+      <span class="pl-c">// Validation passed!</span>
+      <span class="pl-c">// Create a one time use, unique Authorization Code</span>
+      <span class="pl-k">const</span> <span class="pl-s1">code</span> <span class="pl-c1">=</span> <span class="pl-s1">crypto</span><span class="pl-kos">.</span><span class="pl-en">createHash</span><span class="pl-kos">(</span><span class="pl-s">'sha256'</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">update</span><span class="pl-kos">(</span> <span class="pl-s1">req</span><span class="pl-kos">.</span><span class="pl-c1">query</span><span class="pl-kos">.</span><span class="pl-c1">client_id</span> <span class="pl-c1">+</span> <span class="pl-v">Date</span><span class="pl-kos">.</span><span class="pl-en">now</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">+</span> <span class="pl-s">'A_NICE_LONG_SALT'</span> <span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">digest</span><span class="pl-kos">(</span><span class="pl-s">'hex'</span><span class="pl-kos">)</span>
+
+      <span class="pl-c">// Save the data we gathered here so that we can retrieve it later</span>
+      <span class="pl-s1">authorizations</span><span class="pl-kos">[</span><span class="pl-s1">code</span><span class="pl-kos">]</span> <span class="pl-c1">=</span> <span class="pl-kos">{</span>
+        <span class="pl-c1">client_id</span>:    <span class="pl-s1">req</span><span class="pl-kos">.</span><span class="pl-c1">query</span><span class="pl-kos">.</span><span class="pl-c1">client_id</span><span class="pl-kos">,</span>
+        <span class="pl-c1">launch</span>:       <span class="pl-s1">req</span><span class="pl-kos">.</span><span class="pl-c1">query</span><span class="pl-kos">.</span><span class="pl-c1">launch</span><span class="pl-kos">,</span>
+        <span class="pl-c1">redirect_uri</span>: <span class="pl-s1">req</span><span class="pl-kos">.</span><span class="pl-c1">query</span><span class="pl-kos">.</span><span class="pl-c1">redirect_uri</span><span class="pl-kos">,</span>
+        <span class="pl-c1">scope</span>:        <span class="pl-s1">req</span><span class="pl-kos">.</span><span class="pl-c1">query</span><span class="pl-kos">.</span><span class="pl-c1">scope</span><span class="pl-kos">,</span>
+        <span class="pl-c1">state</span>:        <span class="pl-s1">req</span><span class="pl-kos">.</span><span class="pl-c1">query</span><span class="pl-kos">.</span><span class="pl-c1">state</span>
+      <span class="pl-kos">}</span>
+
+      <span class="pl-c">// Parse the Token Exchange url</span>
+      <span class="pl-k">const</span> <span class="pl-s1">url</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-c1">URL</span><span class="pl-kos">(</span><span class="pl-s1">req</span><span class="pl-kos">.</span><span class="pl-c1">query</span><span class="pl-kos">.</span><span class="pl-c1">redirect_uri</span><span class="pl-kos">)</span>
+
+      <span class="pl-c">// Create the `code` and `state` query parameters</span>
+      <span class="pl-k">const</span> <span class="pl-s1">params</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">URLSearchParams</span><span class="pl-kos">(</span><span class="pl-kos">{</span>
+        <span class="pl-c1">code</span>: <span class="pl-s1">code</span><span class="pl-kos">,</span>
+        <span class="pl-c1">state</span>: <span class="pl-s1">req</span><span class="pl-kos">.</span><span class="pl-c1">query</span><span class="pl-kos">.</span><span class="pl-c1">state</span>
+      <span class="pl-kos">}</span><span class="pl-kos">)</span>
+
+      <span class="pl-c">// Attached those query parameters to the url</span>
+      <span class="pl-s1">url</span><span class="pl-kos">.</span><span class="pl-c1">search</span> <span class="pl-c1">=</span> <span class="pl-s1">params</span>
+
+      <span class="pl-c">// Stich it all together</span>
+      <span class="pl-k">const</span> <span class="pl-s1">redirectUrl</span> <span class="pl-c1">=</span> <span class="pl-s1">url</span><span class="pl-kos">.</span><span class="pl-c1">origin</span> <span class="pl-c1">+</span> <span class="pl-s1">url</span><span class="pl-kos">.</span><span class="pl-c1">pathname</span> <span class="pl-c1">+</span> <span class="pl-s1">url</span><span class="pl-kos">.</span><span class="pl-c1">search</span>
+
+      <span class="pl-c">// And redirect the user</span>
+      <span class="pl-s1">res</span><span class="pl-kos">.</span><span class="pl-en">setHeader</span><span class="pl-kos">(</span><span class="pl-s">'Location'</span><span class="pl-kos">,</span> <span class="pl-s1">redirectUrl</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">send</span><span class="pl-kos">(</span><span class="pl-kos">)</span>
+
+    <span class="pl-kos">}</span>
+
+  <span class="pl-kos">}</span>
+
+<span class="pl-kos">}</span><span class="pl-kos">)</span>
+
+<span class="pl-c">/**</span>
+<span class="pl-c"> * The Token Endpoint</span>
+<span class="pl-c"> * Accepts a number of parameters, validates that data, and returns the patient data.</span>
+<span class="pl-c"> *</span>
+<span class="pl-c"> * <span class="pl-k">@endpoint</span> POST /token</span>
+<span class="pl-c"> * <span class="pl-k">@param</span>  {<span class="pl-smi">string</span>} code            The Authorization Code generated by the authorize endpoint</span>
+<span class="pl-c"> * <span class="pl-k">@param</span>  {<span class="pl-smi">string</span>} grant_type      Will always be 'authorization_code'</span>
+<span class="pl-c"> * <span class="pl-k">@param</span>  {<span class="pl-smi">string</span>} redirect_uri    The url of the Token Exchange endpoint</span>
+<span class="pl-c"> * <span class="pl-k">@param</span>  {<span class="pl-smi">string</span>} client_id       A unique id issued by Patientco</span>
+<span class="pl-c"> * <span class="pl-k">@return</span> {<span class="pl-smi">json</span>}                   The patient data</span>
+<span class="pl-c"> */</span>
+<span class="pl-s1">app</span><span class="pl-kos">.</span><span class="pl-en">post</span><span class="pl-kos">(</span><span class="pl-s">'/token'</span><span class="pl-kos">,</span> <span class="pl-kos">(</span><span class="pl-s1">req</span><span class="pl-kos">,</span> <span class="pl-s1">res</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+
+  <span class="pl-c">// Check that all of the required parameters are here</span>
+  <span class="pl-k">if</span> <span class="pl-kos">(</span>
+       <span class="pl-s1">_</span><span class="pl-kos">.</span><span class="pl-en">isUndefined</span><span class="pl-kos">(</span><span class="pl-s1">req</span><span class="pl-kos">.</span><span class="pl-c1">query</span><span class="pl-kos">.</span><span class="pl-c1">code</span><span class="pl-kos">)</span>
+    <span class="pl-c1">||</span> <span class="pl-s1">_</span><span class="pl-kos">.</span><span class="pl-en">isUndefined</span><span class="pl-kos">(</span><span class="pl-s1">req</span><span class="pl-kos">.</span><span class="pl-c1">query</span><span class="pl-kos">.</span><span class="pl-c1">grant_type</span><span class="pl-kos">)</span>
+    <span class="pl-c1">||</span> <span class="pl-s1">_</span><span class="pl-kos">.</span><span class="pl-en">isUndefined</span><span class="pl-kos">(</span><span class="pl-s1">req</span><span class="pl-kos">.</span><span class="pl-c1">query</span><span class="pl-kos">.</span><span class="pl-c1">redirect_uri</span><span class="pl-kos">)</span>
+    <span class="pl-c1">||</span> <span class="pl-s1">_</span><span class="pl-kos">.</span><span class="pl-en">isUndefined</span><span class="pl-kos">(</span><span class="pl-s1">req</span><span class="pl-kos">.</span><span class="pl-c1">query</span><span class="pl-kos">.</span><span class="pl-c1">client_id</span><span class="pl-kos">)</span>
+  <span class="pl-kos">)</span> <span class="pl-kos">{</span>
+
+    <span class="pl-c">// If we don't have all of the required parameters, log the error and return a 400.</span>
+    <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">'ERROR: Error on /token. Parameters missing. Received: '</span><span class="pl-kos">,</span> <span class="pl-s1">req</span><span class="pl-kos">.</span><span class="pl-c1">query</span><span class="pl-kos">)</span>
+    <span class="pl-s1">res</span><span class="pl-kos">.</span><span class="pl-c1">statusCode</span> <span class="pl-c1">=</span> <span class="pl-c1">400</span>
+    <span class="pl-s1">res</span><span class="pl-kos">.</span><span class="pl-en">send</span><span class="pl-kos">(</span><span class="pl-kos">)</span>
+
+  <span class="pl-kos">}</span> <span class="pl-k">else</span> <span class="pl-kos">{</span>
+
+    <span class="pl-c">// We have all the info we need!</span>
+    <span class="pl-c">// Run some validation</span>
+    <span class="pl-k">if</span> <span class="pl-kos">(</span>!<span class="pl-en">isTokenRequestValid</span><span class="pl-kos">(</span><span class="pl-s1">req</span><span class="pl-kos">.</span><span class="pl-c1">query</span><span class="pl-kos">)</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+
+      <span class="pl-c">// Validation failed, log and return a 404.</span>
+      <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">'ERROR: Error on /token. Token request validation failed. Received: '</span><span class="pl-kos">,</span> <span class="pl-s1">req</span><span class="pl-kos">.</span><span class="pl-c1">query</span><span class="pl-kos">)</span>
+      <span class="pl-s1">res</span><span class="pl-kos">.</span><span class="pl-c1">statusCode</span> <span class="pl-c1">=</span> <span class="pl-c1">400</span>
+      <span class="pl-s1">res</span><span class="pl-kos">.</span><span class="pl-en">send</span><span class="pl-kos">(</span><span class="pl-kos">)</span>
+
+    <span class="pl-kos">}</span> <span class="pl-k">else</span> <span class="pl-kos">{</span>
+
+      <span class="pl-c">// Retreive the authorization</span>
+      <span class="pl-k">const</span> <span class="pl-s1">code</span> <span class="pl-c1">=</span> <span class="pl-s1">req</span><span class="pl-kos">.</span><span class="pl-c1">query</span><span class="pl-kos">.</span><span class="pl-c1">code</span>
+      <span class="pl-k">const</span> <span class="pl-s1">authorization</span> <span class="pl-c1">=</span> <span class="pl-s1">authorizations</span><span class="pl-kos">[</span><span class="pl-s1">code</span><span class="pl-kos">]</span><span class="pl-kos">;</span>
+
+      <span class="pl-c">// And return the patient data</span>
+      <span class="pl-s1">res</span><span class="pl-kos">.</span><span class="pl-c1">statusCode</span> <span class="pl-c1">=</span> <span class="pl-c1">200</span>
+      <span class="pl-s1">res</span><span class="pl-kos">.</span><span class="pl-en">setHeader</span><span class="pl-kos">(</span><span class="pl-s">'Content-Type'</span><span class="pl-kos">,</span> <span class="pl-s">'text/json'</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">send</span><span class="pl-kos">(</span><span class="pl-kos">{</span>
+        <span class="pl-c1">retrieved</span>: <span class="pl-v">Date</span><span class="pl-kos">.</span><span class="pl-en">now</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">+</span> <span class="pl-s">''</span><span class="pl-kos">,</span>
+        <span class="pl-c1">firstname</span>: <span class="pl-s">'John'</span><span class="pl-kos">,</span>
+        <span class="pl-c1">lastname</span>: <span class="pl-s">'Doe'</span><span class="pl-kos">,</span>
+        <span class="pl-c1">email</span>: <span class="pl-s">'john.doe@patientco.com'</span><span class="pl-kos">,</span>
+        <span class="pl-c1">state</span>: <span class="pl-s1">authorization</span><span class="pl-kos">.</span><span class="pl-c1">state</span>
+      <span class="pl-kos">}</span><span class="pl-kos">)</span>
+
+    <span class="pl-kos">}</span>
+    
+  <span class="pl-kos">}</span>
+
+<span class="pl-kos">}</span><span class="pl-kos">)</span>
+
+<span class="pl-c">/**</span>
+<span class="pl-c"> * isAuthorizationRequestValid</span>
+<span class="pl-c"> * Checks if the authorization request is valid. This is just a placeholder right now. You should add your own validation here.</span>
+<span class="pl-c"> * </span>
+<span class="pl-c"> * <span class="pl-k">@param</span>  {<span class="pl-smi">Object</span>}  queryObject    The query object of the request</span>
+<span class="pl-c"> * <span class="pl-k">@return</span> {<span class="pl-smi">Boolean</span>}                Whether or not the request is valid</span>
+<span class="pl-c"> */</span>
+<span class="pl-k">function</span> <span class="pl-en">isAuthorizationRequestValid</span><span class="pl-kos">(</span><span class="pl-s1">queryObject</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+  <span class="pl-c">// Do some validation here</span>
+  <span class="pl-k">return</span> <span class="pl-c1">true</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span>
+
+<span class="pl-c">/**</span>
+<span class="pl-c"> * isTokenRequestValid</span>
+<span class="pl-c"> * Checks if the token request is valid. This is just a placeholder right now. You should add your own validation here.</span>
+<span class="pl-c"> * </span>
+<span class="pl-c"> * <span class="pl-k">@param</span>  {<span class="pl-smi">Object</span>}  queryObject    The query object of the request</span>
+<span class="pl-c"> * <span class="pl-k">@return</span> {<span class="pl-smi">Boolean</span>}                Whether or not the request is valid</span>
+<span class="pl-c"> */</span>
+<span class="pl-k">function</span> <span class="pl-en">isTokenRequestValid</span><span class="pl-kos">(</span><span class="pl-s1">queryObject</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+  <span class="pl-c">// Do some validation here</span>
+  <span class="pl-k">return</span> <span class="pl-c1">true</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span>
+
+<span class="pl-c">/**</span>
+<span class="pl-c"> * Start the server!</span>
+<span class="pl-c"> */</span>
+<span class="pl-s1">app</span><span class="pl-kos">.</span><span class="pl-en">listen</span><span class="pl-kos">(</span><span class="pl-c1">8075</span><span class="pl-kos">,</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+  <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">`App listening at http://localhost:8075`</span><span class="pl-kos">)</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span></pre></div>
+</article></body></html>
